@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sora Variable", system-ui, sans-serif;
+  --color-primary: #c67c4e;
+  --color-ink: #2f2d2c;
+  --color-muted: #a2a2a2;
+  --color-surface: #f9f9f9;
+  --color-chip: #ededed;
+  --color-line: #e3e3e3;
+  --color-success: #36c07e;
+}
+
+html {
+  background: var(--color-surface);
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.map-grid {
+  background-color: #eee;
+  background-image:
+    linear-gradient(#fff 3px, transparent 3px),
+    linear-gradient(90deg, #fff 3px, transparent 3px),
+    linear-gradient(#e3e3e3 1px, transparent 1px),
+    linear-gradient(90deg, #e3e3e3 1px, transparent 1px);
+  background-size:
+    96px 96px,
+    96px 96px,
+    24px 24px,
+    24px 24px;
+}
